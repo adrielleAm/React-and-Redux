@@ -5,6 +5,7 @@ import AboutPage from "./about/AboutPage";
 import Header from "./commom/Header";
 import CoursesPage from "./courses/CoursesPage";
 import PageNotFound from "./PageNotFound";
+import ManageCoursePage from "./courses/ManageCoursePage";
 
 function App() {
   return (
@@ -13,7 +14,10 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/about" component={AboutPage} />
-        <Route path="/courses" component={CoursesPage} />
+        <Route path="/courses/" component={CoursesPage} />
+        <Route path="/course/:slug" component={ManageCoursePage} />
+        <Route path="/course" component={ManageCoursePage} />
+        <Route path="/courses/" component={CoursesPage} />
         <Route component={PageNotFound} />
       </Switch>
     </div>
