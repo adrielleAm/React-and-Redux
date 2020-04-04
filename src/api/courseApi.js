@@ -17,8 +17,11 @@ export function saveCourse(course) {
     .catch(handleError);
 }
 
-export function deleteCourse(courseId) {
-  return fetch(baseUrl + courseId, { method: "DELETE" })
-    .then(handleResponse)
-    .catch(handleError);
+export async function deleteCourse(courseId) {
+  try {
+    let handleResponse = await fetch(baseUrl + courseId, { method: "DELETE" });
+    return handleResponse(handleResponse);
+  } catch (handleError) {
+    return handleError(handleError);
+  }
 }
