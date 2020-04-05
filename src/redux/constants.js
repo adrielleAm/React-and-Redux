@@ -2,7 +2,7 @@ export const LOAD_COURSES_SUCCESS = "LOAD_COURSES_SUCCESS";
 export const SAVE_COURSES_SUCCESS = "SAVE_COURSES_SUCCESS";
 export const CREATE_COURSES_SUCCESS = "CREATE_COURSES_SUCCESS";
 export const LOAD_AUTHORS_SUCCESS = "LOAD_AUTHORS_SUCCESS";
-export const BEGIN_APi_CALL = "BEGIN_APi_CALL";
+export const BEGIN_API_CALL = "BEGIN_APi_CALL";
 export const API_CALL_ERROR = "API_CALL_ERROR";
 
 // By convention, actions that end in "_SUCCESS" are assumed to have been the result of a completed
